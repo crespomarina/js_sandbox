@@ -289,3 +289,12 @@ val = num3.sort(function(x,y){
 })
 
 console.log(val);
+
+//find 
+function minor(x){
+    return x < 18;
+}
+
+//solo busco los que cumplen con la condicion de la funcion
+val = num3.find(minor);
+console.log(val);
