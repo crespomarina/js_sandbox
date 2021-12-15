@@ -236,7 +236,7 @@ html = `
 `;
 
 document.body.innerHTML = html;
-*/ //LOREM 
+
 
 //ARRAYS
 const numeros = [1,2,4];
@@ -297,4 +297,31 @@ function minor(x){
 
 //solo busco los que cumplen con la condicion de la funcion
 val = num3.find(minor);
+console.log(val);
+
+*/ //LOREM 
+
+//OBJECT LITERALS
+const materia = {
+    nombre: 'Matematica basica',
+    cuatrimestre: 1,
+    alumnos: 200,
+    regularidad: 4,
+    modulos: ['derivadas','integrales'],
+    getNota: function(){
+        return 9;
+    },
+    docentes: {
+        titular: 'Fabiana',
+        adjunta: 'Melanie'
+    }
+}
+
+let val; 
+//puedo sacar cualquier valor con notacion de puntos
+val = materia.docentes.adjunta; 
+val = materia.modulos[0];
+val = materia.getNota();
+console.log(`Estoy cursando ${materia.nombre}`)
+
 console.log(val);
