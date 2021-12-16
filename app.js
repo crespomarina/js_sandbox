@@ -371,3 +371,30 @@ gabiBDay.setSeconds(30);
 val = gabiBDay;
 console.log(`My friend Gabi was born on ${val}`);
 */ //LOREM 
+
+//IF AND COMPARATIONS
+//check if something exits or not 
+const id = 100;
+
+//porque si id no esta, es undefined 
+if(typeof id !== 'undefined'){
+    console.log(`My ID is ${id}`)
+} else {
+    console.log('No ID');
+}
+
+//and or 
+const numero = 20;
+if(10<numero<100){
+    console.log('Esta entre 10 y 100');
+}
+//es lo mismo que escribir 
+if(numero>10 && numero<100){
+    console.log('Esta entre 10 y 100');
+}
+
+//ternary operator
+//es una forma corta de escribir if else 
+//if id === 100 console.log correct, else console.log incorrect
+console.log(id === 100 ? 'CORRECT' : 'INCORRECT')
+
