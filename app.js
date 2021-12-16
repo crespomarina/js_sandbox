@@ -370,7 +370,7 @@ gabiBDay.setSeconds(30);
 
 val = gabiBDay;
 console.log(`My friend Gabi was born on ${val}`);
-*/ //LOREM 
+
 
 //IF AND COMPARATIONS
 //check if something exits or not 
@@ -398,3 +398,67 @@ if(numero>10 && numero<100){
 //if id === 100 console.log correct, else console.log incorrect
 console.log(id === 100 ? 'CORRECT' : 'INCORRECT')
 
+//SWITCH
+let day;
+
+switch(new Date().getDay()){
+    case 0: 
+        day = 'Sunday';
+        break;
+    case 1: 
+        day = 'Monday';
+        break;
+    case 2: 
+        day = 'Tuesday';
+        break;
+    case 3: 
+        day = 'Wednesday';
+        break;
+    case 4: 
+        day = 'Thursday';
+        break;
+    case 5: 
+        day = 'Friday';
+        break;
+    case 6:
+        day = 'Saturda';
+        break;
+}
+
+console.log(`Today's ${day}`);
+
+
+//FUNCTIONS 
+function greet(firstName = 'Marina', lastName = 'Crespo'){
+    return 'Hello ' + firstName + ' '+ lastName;
+}
+
+console.log(greet());
+console.log(greet('John', 'Doe'));
+
+//IMMIDIATLEY INVOKABLE FUNCTION -IIFEs
+//son funciones que se crean y se llaman 
+(function(nombre){
+    console.log('Hello ' + nombre);
+})('Brad');
+
+//PROPERTY METHODS
+const todo = {
+    add: function(){
+        console.log('add to do ');
+    },
+    edit: function(id){
+        console.log(`Edit to-do ${id}`);
+    }
+}
+
+//tambien puedo declarar los metodos por fuera
+todo.delete = function() {
+    console.log('Deleting to-do...');
+}
+
+todo.add();
+todo.edit(22);
+todo.delete();
+
+*/ //LOREM
