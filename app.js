@@ -299,7 +299,7 @@ function minor(x){
 val = num3.find(minor);
 console.log(val);
 
-*/ //LOREM 
+
 
 //OBJECT LITERALS
 const materia = {
@@ -325,3 +325,49 @@ val = materia.getNota();
 console.log(`Estoy cursando ${materia.nombre}`)
 
 console.log(val);
+
+
+//DATES ON JS
+let val; 
+
+//constructor sin argumento es fecha de hoy
+const today = new Date();
+//year, month, day, hour, minutes, seconds, miliseconds
+const xMas = new Date(2021,12,25,15,15,00);
+const myBDay = new Date('June 22');
+//milisegundos desde 1/1/1970
+const seconds = new Date(100000000);
+//return valor numerico correspondiente a la hora actual
+const sDate = Date.now()
+//date.parse() return milisegundos 
+const parDate = Date.parse("december 25 2021");
+
+//METODOS DE DATES 
+//me dice el tiempo de un evento, en milisegundos 
+const inicio = today.getTime();
+//dia del mes 
+const inDia = today.getUTCDate();
+//dia de la semana
+const inSem = today.getDay();
+
+console.log(`Today is the ${inDia} of december, 2021`)
+
+if(inSem===4){ 
+    console.log('Today is thursday');
+} else {
+    console.log("Today's not thursday");
+}
+
+console.log(`Today's ${today.getUTCDay()} of ${today.getUTCMonth()+1}, ${today.getUTCFullYear()}`)
+
+let gabiBDay = new Date();
+gabiBDay.setDate(22);
+gabiBDay.setMonth(7);
+gabiBDay.setFullYear(1993);
+gabiBDay.setHours(10);
+gabiBDay.setMinutes(45);
+gabiBDay.setSeconds(30);
+
+val = gabiBDay;
+console.log(`My friend Gabi was born on ${val}`);
+*/ //LOREM 
