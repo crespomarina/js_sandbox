@@ -528,3 +528,62 @@ for(let x in usuario){
     console.log(`${x} : ${usuario[x]}`)
 }
 */ //LOREM 
+
+//WINDOW OBJECT
+
+//console.log()
+//alert()
+
+//prompt, pop up que le pide un texto al usuario 
+// const input = prompt('Ingrese su nombre');
+// alert('Bienvenido usuario ' + input); 
+
+//confirm 
+// if(confirm('Are u sure?')){
+//     console.log('yes');
+// }
+
+/*
+let val;
+
+//este tipo de cosas sirven para EVENTOS
+//outer and inner height and width
+//son medidas de la pantalla (de la ventana, estrictamente)
+val = window.outerHeight;
+val = window.outerWidth;
+val = window.innerHeight;
+val = window.innerWidth;
+
+//scroll points 
+val = window.scrollY;
+val = window.scrollX;
+
+//LOCATION OBJECT 
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+//window.location.search sirve para extraer
+//valores de la barra de busqueda y usarlos para algo
+val = window.location.search;
+
+//REDIRECCIONAR
+//usamos el location.href para crear un evento 
+//podemos redireccionar dentro o fuera de nuestra pagina
+// window.location.href = 'http://google.com';
+
+//RELOAD 
+
+//HISTORY OBJECT
+//le paso un numero y vuelve tantas veces hacia atra
+//como el numero que le paso
+// window.history.go(-1);
+
+//NAVIGTOR OBJECT
+//me da los datos del navegador 
+val = window.navigator;
+val = window.navigator.language; 
+val = window.navigator.vendor;
+
+console.log(val);
+*/
