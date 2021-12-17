@@ -461,4 +461,70 @@ todo.add();
 todo.edit(22);
 todo.delete();
 
-*/ //LOREM
+//LOOPS
+for(let i = 0; i<11; i++){
+    console.log(i);
+}
+
+//break out of a loop
+for(let i = 0; i<11; i++){
+    if(i%2===0){
+        console.log(i + ': numero par');
+        continue;
+    }
+    if(i===5){
+        console.log('Es 5');
+        break;
+    }
+    console.log(i + ': numero impar')
+}
+
+const cars = ['Ford', 'Toyota', 'Land Rover', 'Audi'];
+
+for(let i = 0; i<cars.length; i++){
+    console.log(cars[i]);
+}
+//una forma mas sencilla de hacer lo de arriba 
+//es con forEach();
+//es una IIFE 
+//car es un nombre qe le damos a cada elemento
+//seria como un this->
+cars.forEach(function(car){
+    console.log(car);
+});
+
+//esto es un mapa
+const users = [
+    {id: 1, nombre: 'Marina'},
+    {id: 2, nombre: 'Catalina'},
+    {id: 3, nombre: 'Jesica'}
+];
+
+const ids = users.map(function(user){
+    return user.id;
+})
+//esto seria lo mismo que: 
+// for(let i = 0; i<users.length; i++){
+//     console.log(users[i].id);
+// }
+
+//car es el currentValue, index es palabra reservada 
+//en este caso 
+cars.forEach(function(car,index){
+    console.log(`${index} : ${car}`);
+});
+
+//for-in loop
+//x es el key, users[x] es el valor de ese key 
+//esto es un objeto
+const usuario = {
+    firstName: 'Marina',
+    lastName: 'Crespo',
+    age: 26
+}
+
+//logeo cada key y value de mi obejto
+for(let x in usuario){
+    console.log(`${x} : ${usuario[x]}`)
+}
+*/ //LOREM 
