@@ -587,3 +587,25 @@ val = window.navigator.vendor;
 
 console.log(val);
 */
+
+//SCOPES AND VARIABLES
+var a = 1;
+let b = 2;
+const c = 3;
+
+function test(){
+    var a = 4;
+    let b = 5;
+    const d = 6;
+    console.log(`Function scope: `, a, b, c);
+}
+test();
+
+if(true){
+    var a = 4;
+    let b = 5;
+    const d = 6;
+    console.log(`If scope: `, a, b, c);
+}  
+
+console.log(`Global scope: `, a, b, c);
